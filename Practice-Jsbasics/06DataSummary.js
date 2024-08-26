@@ -17,3 +17,17 @@ const myfunc1=function(){
 
 //----Memory----
 //stack(primitive) & Heap(Non-primitive)
+let myname1="abhinov"
+let myname2=myname1
+console.log(myname1);
+myname2="Bhargob"
+console.log(myname2);// In stack copy of value is given to the new variable so if we change value of the new variable it will not change the value of original value of the variable
+
+let UserOne={
+    emailid:"user1@gmail.com"
+}
+let UserTwo=UserOne
+
+ UserTwo.emailid="user2@gmail.com"
+ console.log(UserOne.emailid);
+ console.log(UserTwo.emailid);
